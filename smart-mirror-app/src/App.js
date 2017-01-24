@@ -1,18 +1,34 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.css'; // App styling
+import Clock from './components/Clock'; // Clock component
+import Weather from './components/Weather'; // Weather component
+import Transit from './components/Transit'; // Transit component
+import Face from './components/Face'; // Face component
+import Quote from './components/Quote'; // Quote component
 
 class App extends Component {
+
+  // constructor - initial state is an empty object
+  constructor() {
+    super();
+    this.state = {
+    };
+  }
+
+  // rendering the components
   render() {
+
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <div className="container">
+        <div className="left-side">
+          <Clock />
+          <Weather />
+          <Transit />
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="right-side">
+          <Face />
+          <Quote />
+        </div>
       </div>
     );
   }

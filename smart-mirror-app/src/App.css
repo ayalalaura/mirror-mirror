@@ -1,8 +1,156 @@
-.App {
-  text-align: center;
+body {
+  background-color: black;
+  color:  white;
 }
 
-.App-logo {
+.container {
+  /* margin: 20px; */
+  padding: 20px;
+}
+
+.left-side {
+  /* display: inline-block; */
+  float:  left;
+}
+
+.date-object {
+
+}
+
+p.date {
+  font-size: 50px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+p.time {
+  font-size: 95px;
+  margin-top: 5px;
+  margin-bottom: 60px;
+}
+
+.weather-object {
+
+}
+
+.skycon {
+  width: 210px;
+  height: 116px;
+}
+
+canvas {
+  width: 50%;
+  height: 50%;
+  padding: 20px;
+  position: relative;
+  left: 125px;
+}
+
+.temp {
+  position: relative;
+  top:  -160px;
+  /* left: 10px; */
+}
+
+p.current-temp {
+  font-size: 80px;
+}
+
+.summary {
+  position: relative;
+  top:  -190px;
+  width: 460px;
+}
+
+p.hourly-summary {
+  font-size: 40px;
+  margin-top: 5px;
+}
+
+.transit-object {
+
+}
+
+.trains {
+
+}
+
+/* http://wpsites.net/web-design/colored-numbered-circles-using-pure-css-html/ */
+
+p.two-status {
+  font-size: 30px;
+  position: relative;
+  top:  -130px;
+}
+
+span.two-symbol {
+  background-color: red;
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 15px;
+  text-align: center;
+  width: 1.6em;
+  font-size: 32px;
+}
+
+p.five-status {
+  font-size: 30px;
+  position: relative;
+  top:  -210px;
+  left: 220px;
+}
+
+span.five-symbol {
+  background-color: green;
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 15px;
+  text-align: center;
+  width: 1.6em;
+  font-size: 32px;
+  /* padding-bottom: 4px; */
+}
+
+.right-side {
+  /* display: inline-block; */
+  float:  right;
+}
+
+.floating-face {
+  position: relative;
+  top: 40px;
+  left: -30px;
+}
+
+img.face {
+
+}
+
+.greeting {
+  position: relative;
+  top: 580px;
+  right: 30px;
+}
+
+p.question {
+  font-size: 25px;
+}
+
+
+
+/* .App {
+  text-align: center;
+} */
+
+/* .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
@@ -21,4 +169,4 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
+} */
